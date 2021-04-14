@@ -34,7 +34,10 @@ const httpReducer = (curHttpState, action)=> {
 
 const Ingredients = () => {
    const [userIngredients, dispatch] = useReducer(ingredientReducer, []);
-   const [httpState, dispatchHttp] = useReducer(httpReducer, {loading: false, error: null});
+   const [httpState, dispatchHttp] = useReducer(httpReducer, {
+     loading: false, 
+     error: null
+    });
 
   //const [ userIngredients, setUserIngredients ] = useState([]);
   // const [isLoading, setIsLoading] = useState(false);
